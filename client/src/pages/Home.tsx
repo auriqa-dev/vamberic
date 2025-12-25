@@ -24,7 +24,7 @@ export default function Home() {
             <p className="text-primary font-medium mb-4 tracking-wide">VAMBERIC GROUP</p>
             <h1 className="text-5xl md:text-7xl font-bold font-display leading-tight mb-6">
               We build brands that <br />
-              <span className="text-gradient">win their category.</span>
+              <span className="text-gradient">win in their category.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-lg leading-relaxed">
               Vamberic is a house of brands creating and backing product businesses with one obsession: making useful things that scale.
