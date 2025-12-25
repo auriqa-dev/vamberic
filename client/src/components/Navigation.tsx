@@ -18,7 +18,6 @@ export function Navigation() {
   const navLinks = [
     { name: "About", href: "#about" },
     { name: "Brands", href: "#brands" },
-    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -65,13 +64,6 @@ export function Navigation() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={(e) => scrollToSection(e, "#contact")}
-              className="px-5 py-2 rounded-full bg-primary/10 text-primary border border-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-medium text-sm"
-            >
-              Get in Touch
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,13 +96,6 @@ export function Navigation() {
                   {link.name}
                 </a>
               ))}
-              <a
-                href="#contact"
-                onClick={(e) => scrollToSection(e, "#contact")}
-                className="block w-full text-center px-5 py-3 rounded-lg bg-primary text-primary-foreground font-bold mt-4"
-              >
-                Get in Touch
-              </a>
             </div>
           </motion.div>
         )}
