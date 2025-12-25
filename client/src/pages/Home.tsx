@@ -306,6 +306,98 @@ export default function Home() {
                 Coming Soon
               </span>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/signalledger_logo.png" 
+                  alt="SignalLedger Logo" 
+                  className="h-12 object-contain"
+                />
+                <span className="text-xl font-bold text-white font-display">SignalLedger</span>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Always-on competitor and category monitoring: track positioning changes, messaging shifts, and new offers — summarised weekly.
+              </p>
+              <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
+                Coming Soon
+              </span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.6 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/faqfoundry_logo.png" 
+                  alt="FAQFoundry Logo" 
+                  className="h-12 object-contain"
+                />
+                <span className="text-xl font-bold text-white font-display">FAQFoundry</span>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Builds and maintains your "answer library" (FAQs, objections, comparisons) — and outputs web-ready, sales-ready copy.
+              </p>
+              <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
+                Coming Soon
+              </span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.7 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/pipelinescribe_logo.png" 
+                  alt="PipelineScribe Logo" 
+                  className="h-12 object-contain"
+                />
+                <span className="text-xl font-bold text-white font-display">PipelineScribe</span>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Transforms call notes and meeting transcripts into CRM-ready updates, follow-ups, and next steps — consistent, structured, searchable.
+              </p>
+              <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
+                Coming Soon
+              </span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.8 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/insightsprint_logo.png" 
+                  alt="InsightSprint Logo" 
+                  className="h-12 object-contain"
+                />
+                <span className="text-xl font-bold text-white font-display">InsightSprint</span>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Runs short research sprints (ICP interviews, surveys, message testing) — then produces a board-ready insight summary.
+              </p>
+              <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
+                Coming Soon
+              </span>
+            </motion.div>
           </div>
         </div>
       </section>
