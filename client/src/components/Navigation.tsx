@@ -43,7 +43,7 @@ export function Navigation() {
             <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 group-hover:border-primary/50 transition-colors">
                {/* Using the combined logo as icon, assuming it scales well, or falling back to text if image fails loading */}
                <img 
-                 src="/logo_combined.png" 
+                 src="/lion_head.png" 
                  alt="Vamberic Logo" 
                  className="w-full h-full object-cover"
                />
