@@ -265,10 +265,10 @@ export default function Home() {
                 transition={{ delay: idx * 0.1 }}
                 className="relative"
               >
-                <div className="text-6xl font-bold text-primary/10 absolute -top-4 -left-2 font-display">
+                <div className="text-7xl font-bold text-primary/20 absolute -top-6 -left-1 font-display">
                   {step.number}
                 </div>
-                <div className="glass-card p-6 rounded-2xl relative z-10">
+                <div className="glass-card p-6 rounded-2xl relative z-10 mt-4">
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4 text-primary">
                     <step.icon className="w-5 h-5" />
                   </div>
