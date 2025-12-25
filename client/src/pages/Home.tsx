@@ -260,6 +260,29 @@ export default function Home() {
                 Coming Soon
               </span>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/specforge_logo.png" 
+                  alt="SpecForge Logo" 
+                  className="h-12 object-contain"
+                />
+                <span className="text-xl font-bold text-white font-display">SpecForge</span>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Streamlines your project planning and documentation with an intuitive specification management platform. Helping novices write specifications for systems and apps.
+              </p>
+              <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
+                Coming Soon
+              </span>
+            </motion.div>
           </div>
         </div>
       </section>
