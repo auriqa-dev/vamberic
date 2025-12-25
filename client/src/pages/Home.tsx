@@ -57,7 +57,7 @@ export default function Home() {
               <div className="absolute inset-4 border border-white/5 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
               
               {/* Main Logo Image */}
-              <div className="absolute inset-8 rounded-full overflow-hidden bg-secondary/30 backdrop-blur-sm border border-white/10 flex items-center justify-center p-8 shadow-2xl">
+              <div className="absolute inset-8 rounded-full overflow-hidden bg-white border border-white/10 flex items-center justify-center p-8 shadow-2xl">
                  <img 
                    src="/lion_head.png" 
                    alt="Vamberic Lion Logo" 
