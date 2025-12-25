@@ -250,7 +250,7 @@ export default function Home() {
                 <img 
                   src="/thinkbeam_logo.png" 
                   alt="ThinkBeam Logo" 
-                  className="h-12 object-contain"
+                  className="h-16 object-contain"
                 />
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
