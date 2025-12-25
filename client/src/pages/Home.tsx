@@ -283,28 +283,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA / CONTACT SECTION */}
+      {/* CTA / CONTACT SECTION - Hidden for now, will reinstate later
       <section id="contact" className="py-24 bg-gradient-to-b from-secondary/20 to-background relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="glass-card rounded-3xl p-8 md:p-12 border border-primary/20 relative overflow-hidden">
-            {/* Glow effect */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[80px] rounded-full -mr-20 -mt-20 pointer-events-none" />
-            
             <SectionHeading 
               title="Start a conversation" 
               subtitle="Contact Us"
             />
-            
             <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
               What are you building, who is it for, and what would "meaningful progress" look like in 90 days?
             </p>
-            
             <div className="relative z-10">
               <ContactForm />
             </div>
           </div>
         </div>
       </section>
+      */}
 
       {/* FOOTER */}
       <footer className="py-12 border-t border-white/10 bg-background text-sm">
