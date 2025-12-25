@@ -283,6 +283,29 @@ export default function Home() {
                 Coming Soon
               </span>
             </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/odyssio_logo.png" 
+                  alt="Odyssio Logo" 
+                  className="h-12 object-contain"
+                />
+                <span className="text-xl font-bold text-white font-display">Odyssio</span>
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                The always-on social engine: organise, repurpose, schedule, and publish—automatically.
+              </p>
+              <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
+                Coming Soon
+              </span>
+            </motion.div>
           </div>
         </div>
       </section>
