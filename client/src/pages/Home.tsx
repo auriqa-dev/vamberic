@@ -183,12 +183,12 @@ export default function Home() {
             subtitle="Our Portfolio"
           />
 
-          <div className="max-w-2xl mx-auto mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="glass-card p-8 md:p-12 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-6">
                 <img 
@@ -207,6 +207,34 @@ export default function Home() {
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
               >
                 Visit Odyssiant
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="/auriqa_logo.png" 
+                  alt="Auriqa Logo" 
+                  className="h-12 object-contain"
+                />
+              </div>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Surfaces answers from your own documents live in Risk, Credit and Board meetings — then turns them into a regulator-ready record of what was decided and why.
+              </p>
+              <a
+                href="https://www.auriqa.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+              >
+                Visit Auriqa
                 <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>
