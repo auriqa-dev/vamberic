@@ -323,12 +323,6 @@ export default function Home() {
             <p className="text-muted-foreground">
               &copy; {new Date().getFullYear()} Vamberic Group. All rights reserved.
             </p>
-            <a 
-              href="mailto:hello@vamberic.com" 
-              className="text-primary hover:underline"
-            >
-              hello@vamberic.com
-            </a>
           </div>
         </div>
       </footer>
