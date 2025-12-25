@@ -59,7 +59,7 @@ export default function Home() {
               {/* Main Logo Image */}
               <div className="absolute inset-8 rounded-full overflow-hidden bg-secondary/30 backdrop-blur-sm border border-white/10 flex items-center justify-center p-8 shadow-2xl">
                  <img 
-                   src="/logo_combined.png" 
+                   src="/lion_head.png" 
                    alt="Vamberic Lion Logo" 
                    className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(45,212,191,0.3)]"
                  />
