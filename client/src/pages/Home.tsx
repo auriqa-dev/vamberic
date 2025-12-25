@@ -208,7 +208,7 @@ export default function Home() {
                 Measure and improve how your brand appears in AI answers — and what to do about it.
               </p>
               <a
-                href="https://odyssiant.com"
+                href="https://www.odyssiant.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
