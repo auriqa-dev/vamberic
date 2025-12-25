@@ -32,21 +32,13 @@ export default function Home() {
             <p className="text-lg text-muted-foreground mb-8 max-w-lg">
               Less noise. More leverage. More outcomes.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="#brands"
-                className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
-              >
-                Explore our brands
-                <ArrowRight className="w-5 h-5" />
-              </a>
-              <a
-                href="#contact"
-                className="px-8 py-4 rounded-full bg-secondary/50 border border-white/10 text-white font-semibold text-lg hover:bg-secondary hover:border-white/20 transition-all duration-300 flex items-center justify-center"
-              >
-                Talk to Vamberic
-              </a>
-            </div>
+            <a
+              href="#brands"
+              className="inline-flex px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300 items-center justify-center gap-2"
+            >
+              Explore our brands
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </motion.div>
 
           <motion.div
