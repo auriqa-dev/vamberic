@@ -61,7 +61,7 @@ export default function Home() {
                  <img 
                    src="/lion_head.png" 
                    alt="Vamberic Lion Logo" 
-                   className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(45,212,191,0.3)]"
+                   className="w-full h-full object-contain"
                  />
               </div>
             </div>
