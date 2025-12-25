@@ -222,7 +222,7 @@ export default function Home() {
                 <img 
                   src="/auriqa_logo.png" 
                   alt="Auriqa Logo" 
-                  className="h-16 object-contain"
+                  className="h-12 object-contain"
                 />
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
