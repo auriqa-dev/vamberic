@@ -199,10 +199,11 @@ export default function Home() {
               className="glass-card p-8 md:p-12 rounded-2xl group hover:border-primary/30 transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                  <Target className="w-7 h-7" />
-                </div>
-                <h3 className="text-2xl font-bold text-white font-display">Odyssiant</h3>
+                <img 
+                  src="/odyssiant_logo.png" 
+                  alt="Odyssiant Logo" 
+                  className="h-12 object-contain"
+                />
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 Measure and improve how your brand appears in AI answers — and what to do about it.
