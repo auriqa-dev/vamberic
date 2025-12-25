@@ -17,7 +17,7 @@ export function Navigation() {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
+    { name: "Brands", href: "#brands" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -40,8 +40,7 @@ export function Navigation() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 group-hover:border-primary/50 transition-colors">
-               {/* Using the combined logo as icon, assuming it scales well, or falling back to text if image fails loading */}
+            <div className="relative w-10 h-10 overflow-hidden rounded-full border border-primary/20 group-hover:border-primary/50 transition-colors bg-white">
                <img 
                  src="/lion_head.png" 
                  alt="Vamberic Logo" 
