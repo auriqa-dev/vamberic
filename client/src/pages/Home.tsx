@@ -173,6 +173,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CUSTOMERS CAROUSEL SECTION */}
+      <section className="py-16 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading 
+            title="Selection of our customers" 
+            subtitle="Trusted By"
+          />
+          
+          <div className="mt-12 relative">
+            <div className="flex animate-scroll gap-12 items-center">
+              {[
+                { src: "/customer_rosslyn.png", alt: "Rosslyn" },
+                { src: "/customer_bt.png", alt: "BT" },
+                { src: "/customer_natwest.png", alt: "NatWest" },
+                { src: "/customer_ifs.png", alt: "IFS" },
+                { src: "/customer_camelot.png", alt: "Camelot" },
+                { src: "/customer_ap.png", alt: "AP" },
+                { src: "/customer_beroe.png", alt: "Beroe" },
+                { src: "/customer_britishgas.jpg", alt: "British Gas" },
+                { src: "/customer_cifas.jpg", alt: "CIFAS" },
+                { src: "/customer_equans.jpg", alt: "Equans" },
+                { src: "/customer_splitit.png", alt: "Splitit" },
+                { src: "/customer_tfl.png", alt: "Transport for London" },
+                { src: "/customer_newsuk.png", alt: "News UK" },
+                { src: "/customer_silverstone.png", alt: "Silverstone" },
+                { src: "/customer_rosslyn.png", alt: "Rosslyn" },
+                { src: "/customer_bt.png", alt: "BT" },
+                { src: "/customer_natwest.png", alt: "NatWest" },
+                { src: "/customer_ifs.png", alt: "IFS" },
+                { src: "/customer_camelot.png", alt: "Camelot" },
+                { src: "/customer_ap.png", alt: "AP" },
+                { src: "/customer_beroe.png", alt: "Beroe" },
+                { src: "/customer_britishgas.jpg", alt: "British Gas" },
+                { src: "/customer_cifas.jpg", alt: "CIFAS" },
+                { src: "/customer_equans.jpg", alt: "Equans" },
+                { src: "/customer_splitit.png", alt: "Splitit" },
+                { src: "/customer_tfl.png", alt: "Transport for London" },
+                { src: "/customer_newsuk.png", alt: "News UK" },
+                { src: "/customer_silverstone.png", alt: "Silverstone" },
+              ].map((customer, idx) => (
+                <div 
+                  key={idx} 
+                  className="flex-shrink-0 h-16 w-32 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                >
+                  <img 
+                    src={customer.src} 
+                    alt={customer.alt} 
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURED BRANDS SECTION */}
       <section id="brands" className="py-24 relative overflow-hidden">
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
