@@ -215,7 +215,7 @@ export default function Home() {
               ].map((customer, idx) => (
                 <div 
                   key={idx} 
-                  className="flex-shrink-0 h-16 w-32 flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                  className="flex-shrink-0 h-16 w-32 flex items-center justify-center grayscale-[50%] hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300 bg-white/10 rounded-lg p-2"
                 >
                   <img 
                     src={customer.src} 
