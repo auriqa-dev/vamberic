@@ -162,7 +162,7 @@ export default function Home() {
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
                 Most organisations try to grow by adding complexity.
               </p>
-              <p className="text-2xl md:text-3xl text-white font-semibold leading-relaxed mb-8">
+              <p className="text-2xl md:text-3xl text-white font-semibold leading-relaxed mb-8 whitespace-nowrap">
                 Vamberic grows by increasing clarity and compounding execution.
               </p>
               <p className="text-xl text-primary font-medium">
