@@ -177,8 +177,8 @@ export default function Home() {
       <section className="py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-center text-primary font-medium mb-8 tracking-wide">TRUSTED BY</p>
-          <div className="relative">
-            <div className="flex animate-scroll gap-12 items-center">
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll gap-12 items-center w-max">
               {[
                 { src: "/customer_rosslyn.png", alt: "Rosslyn" },
                 { src: "/customer_bt.png", alt: "BT" },
