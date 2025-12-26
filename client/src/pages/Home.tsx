@@ -190,7 +190,7 @@ export default function Home() {
                 { src: "/customer_ifs.png", alt: "IFS" },
                 { src: "/customer_camelot.png", alt: "Camelot" },
                 { src: "/customer_ap.png", alt: "AP" },
-                { src: "/customer_beroe.png", alt: "Beroe" },
+                { src: "/customer_beroe.png", alt: "Beroe", whiteBg: true },
                 { src: "/customer_britishgas.jpg", alt: "British Gas" },
                 { src: "/customer_cifas.jpg", alt: "CIFAS" },
                 { src: "/customer_equans.jpg", alt: "Equans" },
@@ -204,7 +204,7 @@ export default function Home() {
                 { src: "/customer_ifs.png", alt: "IFS" },
                 { src: "/customer_camelot.png", alt: "Camelot" },
                 { src: "/customer_ap.png", alt: "AP" },
-                { src: "/customer_beroe.png", alt: "Beroe" },
+                { src: "/customer_beroe.png", alt: "Beroe", whiteBg: true },
                 { src: "/customer_britishgas.jpg", alt: "British Gas" },
                 { src: "/customer_cifas.jpg", alt: "CIFAS" },
                 { src: "/customer_equans.jpg", alt: "Equans" },
@@ -215,7 +215,7 @@ export default function Home() {
               ].map((customer, idx) => (
                 <div 
                   key={idx} 
-                  className="flex-shrink-0 h-16 w-32 flex items-center justify-center grayscale-[50%] hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300 bg-white/10 rounded-lg p-2"
+                  className={`flex-shrink-0 h-16 w-32 flex items-center justify-center grayscale-[50%] hover:grayscale-0 opacity-80 hover:opacity-100 transition-all duration-300 rounded-lg p-2 ${customer.whiteBg ? 'bg-white' : 'bg-white/10'}`}
                 >
                   <img 
                     src={customer.src} 
