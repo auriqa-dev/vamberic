@@ -176,12 +176,7 @@ export default function Home() {
       {/* CUSTOMERS CAROUSEL SECTION */}
       <section className="py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading 
-            title="Selection of our customers" 
-            subtitle="Trusted By"
-          />
-          
-          <div className="mt-12 relative">
+          <div className="relative">
             <div className="flex animate-scroll gap-12 items-center">
               {[
                 { src: "/customer_rosslyn.png", alt: "Rosslyn" },
