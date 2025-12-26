@@ -165,7 +165,7 @@ export default function Home() {
               <p className="text-2xl md:text-3xl text-white font-semibold leading-relaxed mb-8 whitespace-nowrap">
                 Vamberic grows by increasing clarity and compounding execution.
               </p>
-              <p className="text-xl text-primary font-medium">
+              <p className="text-xl text-primary font-medium whitespace-nowrap">
                 We build brands that are easy to understand, hard to ignore, and built to last.
               </p>
             </motion.div>
