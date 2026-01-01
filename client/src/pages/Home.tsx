@@ -553,7 +553,7 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/5">
             <p className="text-muted-foreground">
-              &copy; {new Date().getFullYear()} Vamberic Group. All rights reserved.
+              &copy; {new Date().getFullYear()} Vamberic Group Ltd. All rights reserved.
             </p>
             <a 
               href="mailto:info@vamberic.com" 
