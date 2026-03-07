@@ -244,7 +244,7 @@ export default function Home() {
             >
               <div className="flex items-center gap-4 mb-6">
                 <img 
-                  src="/odyssiant_logo.png" 
+                  src="/odyssiant_logo_new.png" 
                   alt="Odyssiant Logo" 
                   className="h-12 object-contain"
                 />
