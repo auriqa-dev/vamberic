@@ -63,6 +63,24 @@
   .animate-scroll {
     animation: scroll 20s linear infinite;
   }
+
+  .animate-scroll:hover,
+  .animate-scroll:focus-within {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll {
+      animation: none;
+      flex-wrap: wrap;
+      width: auto;
+      justify-content: center;
+    }
+
+    .animate-scroll > [aria-hidden="true"] {
+      display: none;
+    }
+  }
 }
 
 @keyframes scroll {

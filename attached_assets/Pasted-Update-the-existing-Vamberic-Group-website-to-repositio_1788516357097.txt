@@ -1,0 +1,205 @@
+Update the existing Vamberic Group website to reposition the business as an independent management and technology consultancy.
+
+Do not rebuild the site from scratch. Retain the existing logo, colour palette, typography, visual effects, responsive layout and overall premium feel. Reuse the existing sections and components where practical, but replace the current “house of brands” and product-building narrative throughout.
+
+## Core positioning
+
+Use this as the primary company description:
+
+“Vamberic Group is an independent management and technology consultancy helping organisations turn data, AI and digital capabilities into practical transformation and measurable commercial outcomes.”
+
+The tone should be intelligent, understated and commercially credible. Use concise British English. Avoid inflated consultancy language, excessive buzzwords and em dashes.
+
+## Navigation
+
+Change the navigation to:
+
+* About
+* Capabilities
+* Experience
+* Ventures
+* Contact
+
+Each item should link smoothly to the appropriate section on the homepage.
+
+## Hero section
+
+Eyebrow:
+
+VAMBERIC GROUP
+
+Main heading:
+
+Independent expertise for complex transformation.
+
+Body copy:
+
+Vamberic Group is an independent management and technology consultancy helping organisations turn data, AI and digital capabilities into practical transformation and measurable commercial outcomes.
+
+Supporting line:
+
+Strategy grounded in delivery. Technology connected to commercial value.
+
+Primary CTA:
+
+Discuss an engagement
+
+Link this to the existing [info@vamberic.com](mailto:info@vamberic.com) email address.
+
+Remove:
+
+* “We build brands that win in their category.”
+* “House of brands”
+* “Less noise. More leverage. More outcomes.”
+* The “Explore our brands” CTA
+
+## About section
+
+Section label:
+
+OUR ROLE
+
+Heading:
+
+From ambition to practical change
+
+Copy:
+
+We work with enterprise and high-growth organisations to define priorities, align marketing, data and technology, and turn transformation plans into programmes that deliver.
+
+Engagements span growth strategy, AI adoption, customer journeys, CRM, predictive analytics, marketing architecture, go-to-market development and organisational capability.
+
+Our work combines strategic clarity with practical delivery, from initial research and investment cases through implementation, measurement and optimisation.
+
+Remove all references to Vamberic behaving like a holding company or building a portfolio of independent brands.
+
+## Capabilities section
+
+Section label:
+
+OUR CAPABILITIES
+
+Heading:
+
+Strategy, technology and delivery working together
+
+Replace the current Create, Build and Back cards with four capability cards:
+
+### Strategy and transformation
+
+Digital and AI strategies, transformation roadmaps, investment cases, operating models and commercial priorities.
+
+### Data, AI and decision intelligence
+
+AI readiness, predictive analytics, data integration and practical approaches to applying intelligence within business decisions.
+
+### Customer, CRM and growth
+
+Customer journeys, CRM strategy, personalisation, marketing architecture, go-to-market planning and performance measurement.
+
+### Delivery and capability building
+
+Programme leadership from research through implementation, together with the frameworks, mentoring and knowledge transfer needed to sustain change.
+
+## Purpose section
+
+Section label:
+
+OUR APPROACH
+
+Heading:
+
+Transformation should produce measurable value
+
+Copy:
+
+Technology is useful only when it improves decisions, customer outcomes or commercial performance.
+
+Vamberic connects strategic ambition with the operating changes, data foundations and delivery disciplines required to produce results.
+
+The aim is not transformation for its own sake. It is clearer decisions, stronger capabilities and lasting business value.
+
+## Experience section
+
+Retain the existing client-logo strip, but change “TRUSTED BY” to:
+
+SELECTED EXPERIENCE
+
+Add this introductory copy:
+
+Experience spans financial services, insurance, telecommunications, media, technology, energy, infrastructure and other complex operating environments.
+
+Only retain logos for organisations where the relevant consulting or advisory relationship can be substantiated. Do not add new client logos, testimonials, results or performance claims.
+
+## Ventures section
+
+Move the existing portfolio below the consultancy and experience sections.
+
+Rename:
+
+“Featured brands” to “Selected ventures”
+
+Add this introduction:
+
+Alongside its advisory work, Vamberic develops specialist ventures that apply its experience in data, AI, research and decision-making to focused business problems.
+
+Retain Odyssiant, Auriqa and ThinkBeam if they remain active. Hide the speculative “Coming Soon” cards from the public page, including SpecForge, Odyssio, SignalLedger, FAQFoundry, PipelineScribe and InsightSprint. Do not delete their underlying code or data.
+
+The ventures section should remain secondary to the consultancy positioning.
+
+## Process section
+
+Retain the existing four-step visual structure, but replace its content with:
+
+### 1. Diagnose
+
+Establish the business problem, current capabilities and evidence required to make the right decisions.
+
+### 2. Design
+
+Create a practical strategy, operating model and roadmap connecting investment to measurable outcomes.
+
+### 3. Deliver
+
+Lead implementation across business, marketing, data and technology teams.
+
+### 4. Embed
+
+Build the frameworks, skills and measurement practices needed to sustain progress.
+
+## Footer
+
+Replace the current house-of-brands statement with:
+
+Independent management and technology consultancy.
+
+Keep the existing company name, copyright notice and [info@vamberic.com](mailto:info@vamberic.com) contact link.
+
+## SEO and metadata
+
+Update all relevant page metadata, Open Graph content and structured data.
+
+Use:
+
+Page title:
+
+Vamberic Group | Management and Technology Consultancy
+
+Meta description:
+
+Independent consultancy helping organisations turn data, AI and digital capabilities into practical transformation and measurable commercial outcomes.
+
+Where structured data is present, describe Vamberic as a management and technology consultancy rather than a holding company, venture studio or house of brands.
+
+## Implementation requirements
+
+* Search the entire codebase for outdated language such as “house of brands”, “product businesses”, “backing brands”, “featured brands” and “built to scale”.
+* Remove or replace conflicting wording in visible copy, metadata, image alt text, structured data and social-sharing content.
+* Preserve the existing visual identity, logo treatment, animations and responsive behaviour.
+* Make the consultancy offering the clear focus before ventures are mentioned.
+* Do not invent statistics, case studies, testimonials, client relationships or commercial results.
+* Ensure every navigation link and CTA works.
+* Check accessibility, heading hierarchy, colour contrast and keyboard navigation.
+* Test the finished page at desktop, tablet and mobile widths.
+* Confirm there are no console errors or broken links.
+* At the end, provide a concise summary of the files changed and any content that still requires owner verification.

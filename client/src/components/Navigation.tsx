@@ -17,7 +17,10 @@ export function Navigation() {
 
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Brands", href: "#brands" },
+    { name: "Capabilities", href: "#capabilities" },
+    { name: "Experience", href: "#experience" },
+    { name: "Ventures", href: "#ventures" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -70,6 +73,8 @@ export function Navigation() {
           <button
             className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X /> : <Menu />}
           </button>
