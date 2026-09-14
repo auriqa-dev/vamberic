@@ -32,21 +32,6 @@ jobs:
       - name: Confirm static build output
         run: test -f dist/public/index.html
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
-          aws-region: ${{ vars.AWS_REGION }}
-
-      - name: Sync website to S3
-        run: aws s3 sync dist/public/ "s3://${{ vars.WEBSITE_BUCKET }}" --delete
-
-      - name: Invalidate CloudFront cache
-        run: >
-          aws cloudfront create-invalidation
-          --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}"
-          --paths "/*"
-          
       - name: Show GitHub OIDC identity
         shell: bash
         run: |
@@ -75,3 +60,18 @@ jobs:
           ]:
               print(f"{key}: {claims.get(key)}")
           PY
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Sync website to S3
+        run: aws s3 sync dist/public/ "s3://${{ vars.WEBSITE_BUCKET }}" --delete
+
+      - name: Invalidate CloudFront cache
+        run: >
+          aws cloudfront create-invalidation
+          --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}"
+          --paths "/*"
