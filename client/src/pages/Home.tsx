@@ -1,8 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { SectionHeading } from "@/components/SectionHeading";
-import { ContactForm } from "@/components/ContactForm";
 import { motion } from "framer-motion";
-import { ArrowRight, Compass, BrainCircuit, Users, Rocket, Search, PenTool, Play, Layers, Mail } from "lucide-react";
+import { ArrowRight, Compass, BrainCircuit, Users, Rocket, Search, PenTool, Play, Layers } from "lucide-react";
 
 const capabilities = [
   {
@@ -426,35 +425,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CONTACT SECTION */}
-        <section id="contact" className="py-24 bg-gradient-to-b from-secondary/20 to-background relative scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="glass-card rounded-3xl p-8 md:p-12 border border-primary/20 relative overflow-hidden text-center">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[80px] rounded-full -mr-20 -mt-20 pointer-events-none" />
-              <SectionHeading
-                title="Discuss an engagement"
-                subtitle="Contact"
-              />
-              <p className="text-muted-foreground mb-8 max-w-2xl mx-auto -mt-6 leading-relaxed">
-                Tell us about the decision, programme or capability you are working on and we will arrange an initial conversation.
-              </p>
-              <a
-                href="mailto:info@vamberic.com"
-                className="relative z-10 inline-flex px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300 items-center justify-center gap-2"
-                data-testid="link-contact-cta"
-              >
-                <Mail className="w-5 h-5" aria-hidden="true" />
-                info@vamberic.com
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* CONTACT FORM - Hidden for now, will reinstate later
-        <div className="relative z-10">
-          <ContactForm />
-        </div>
-        */}
       </main>
 
       {/* FOOTER */}

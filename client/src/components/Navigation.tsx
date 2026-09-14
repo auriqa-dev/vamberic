@@ -20,7 +20,6 @@ export function Navigation() {
     { name: "Capabilities", href: "#capabilities" },
     { name: "Experience", href: "#experience" },
     { name: "Ventures", href: "#ventures" },
-    { name: "Contact", href: "#contact" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
