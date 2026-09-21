@@ -6,23 +6,23 @@ import { ArrowRight, Compass, BrainCircuit, Users, Rocket, Search, PenTool, Play
 const capabilities = [
   {
     icon: Compass,
-    title: "Strategy and transformation",
-    description: "Digital and AI strategies, transformation roadmaps, investment cases, operating models and commercial priorities."
+    title: "Product focus and validation",
+    description: "Identify specific commercial problems, test demand with real customers and define a focused first offer."
   },
   {
     icon: BrainCircuit,
-    title: "Data, AI and decision intelligence",
-    description: "AI readiness, predictive analytics, data integration and practical approaches to applying intelligence within business decisions."
+    title: "Data and AI",
+    description: "Apply data, AI and automation where they make products more useful and efficient to operate."
   },
   {
     icon: Users,
-    title: "Customer, CRM and growth",
-    description: "Customer journeys, CRM strategy, personalisation, marketing architecture, go-to-market planning and performance measurement."
+    title: "Customer learning and growth",
+    description: "Bring products to market, learn from customer behaviour and measure demand, usage and commercial results."
   },
   {
     icon: Rocket,
-    title: "Delivery and capability building",
-    description: "Programme leadership from research through implementation, together with the frameworks, mentoring and knowledge transfer needed to sustain change."
+    title: "Shared platform and operations",
+    description: "Reuse Vamberic infrastructure, tools and operating capabilities to launch, maintain and improve products across the portfolio."
   }
 ];
 
@@ -30,26 +30,26 @@ const processSteps = [
   {
     number: "1",
     icon: Search,
-    title: "Diagnose",
-    description: "Establish the business problem, current capabilities and evidence required to make the right decisions."
+    title: "Focus",
+    description: "Choose a specific commercial problem and establish what evidence would justify investment."
   },
   {
     number: "2",
     icon: PenTool,
-    title: "Design",
-    description: "Create a practical strategy, operating model and roadmap connecting investment to measurable outcomes."
+    title: "Launch",
+    description: "Build a focused first offer quickly, keeping scope and investment controlled."
   },
   {
     number: "3",
     icon: Play,
-    title: "Deliver",
-    description: "Lead implementation across business, marketing, data and technology teams."
+    title: "Validate",
+    description: "Test demand with real customers and measure whether the product delivers useful outcomes."
   },
   {
     number: "4",
     icon: Layers,
-    title: "Embed",
-    description: "Build the frameworks, skills and measurement practices needed to sustain progress."
+    title: "Decide",
+    description: "Use the results to improve, maintain or stop a product, and invest further where the evidence supports it."
   }
 ];
 
@@ -70,81 +70,16 @@ const experienceLogos = [
   { src: "/customer_silverstone.png", alt: "Silverstone" },
 ];
 
-interface Venture {
-  name: string;
-  logo: string;
-  logoClass?: string;
-  showName?: boolean;
-  description: string;
-  url?: string;
-  /** Speculative ventures are kept in code but hidden from the public page. */
-  hidden?: boolean;
-}
-
-const ventures: Venture[] = [
+const ventures = [
   {
-    name: "Odyssiant",
-    logo: "/odyssiant_logo_new.png",
-    description: "Measures and improves how your brand appears in AI answers, and what to do about it.",
-    url: "https://www.odyssiant.ai/"
+    name: "HVM",
+    description: "A demand intelligence service proposition focused on helping businesses understand commercial demand."
   },
   {
-    name: "Auriqa",
-    logo: "/auriqa_logo.png",
-    description: "Surfaces answers from your own documents live in Risk, Credit and Board meetings, then turns them into a regulator-ready record of what was decided and why.",
-    url: "https://www.auriqa.ai/"
-  },
-  {
-    name: "ThinkBeam",
-    logo: "/thinkbeam_logo.png",
-    logoClass: "h-16",
-    description: "Runs market research campaigns for organisations."
-  },
-  {
-    name: "SpecForge",
-    logo: "/specforge_logo.png",
-    showName: true,
-    description: "Streamlines your project planning and documentation with an intuitive specification management platform. Helping novices write specifications for systems and apps.",
-    hidden: true
-  },
-  {
-    name: "Odyssio",
-    logo: "/odyssio_logo.png",
-    showName: true,
-    description: "The always-on social engine: organise, repurpose, schedule, and publish automatically.",
-    hidden: true
-  },
-  {
-    name: "SignalLedger",
-    logo: "/signalledger_logo.png",
-    showName: true,
-    description: "Always-on competitor and category monitoring: track positioning changes, messaging shifts, and new offers, summarised weekly.",
-    hidden: true
-  },
-  {
-    name: "FAQFoundry",
-    logo: "/faqfoundry_logo.png",
-    showName: true,
-    description: "Builds and maintains your \"answer library\" (FAQs, objections, comparisons) and outputs web-ready, sales-ready copy.",
-    hidden: true
-  },
-  {
-    name: "PipelineScribe",
-    logo: "/pipelinescribe_logo.png",
-    showName: true,
-    description: "Transforms call notes and meeting transcripts into CRM-ready updates, follow-ups, and next steps: consistent, structured, searchable.",
-    hidden: true
-  },
-  {
-    name: "InsightSprint",
-    logo: "/insightsprint_logo.png",
-    showName: true,
-    description: "Runs short research sprints (ICP interviews, surveys, message testing), then produces a board-ready insight summary.",
-    hidden: true
+    name: "Built Matters",
+    description: "An emerging product focused on the built environment and energy performance."
   }
 ];
-
-const visibleVentures = ventures.filter((v) => !v.hidden);
 
 export default function Home() {
   return (
@@ -166,20 +101,20 @@ export default function Home() {
             >
               <p className="text-primary font-medium mb-4 tracking-wide">VAMBERIC GROUP</p>
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold font-display leading-tight mb-6">
-                Independent expertise for <span className="text-gradient">complex transformation.</span>
+                Focused products. <span className="text-gradient">Built to prove themselves.</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-lg leading-relaxed">
-                Vamberic Group is an independent management and technology consultancy helping organisations turn data, AI and digital capabilities into practical transformation and measurable commercial outcomes.
+                Vamberic is a product studio and operating company. We build, launch and operate focused products for real commercial problems.
               </p>
               <p className="text-lg text-white font-medium mb-8 max-w-lg">
-                Strategy grounded in delivery. Technology connected to commercial value.
+                Launch lean. Learn from customers. Invest on evidence.
               </p>
               <a
                 href="mailto:info@vamberic.com"
                 className="inline-flex px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300 items-center justify-center gap-2"
                 data-testid="link-hero-cta"
               >
-                Discuss an engagement
+                Get in touch
                 <ArrowRight className="w-5 h-5" aria-hidden="true" />
               </a>
             </motion.div>
@@ -212,7 +147,7 @@ export default function Home() {
         <section id="about" className="py-24 bg-secondary/20 relative scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              title="From ambition to practical change"
+              title="One studio. A portfolio of focused products."
               subtitle="Our Role"
             />
 
@@ -224,14 +159,14 @@ export default function Home() {
                 className="glass-card p-8 md:p-12 rounded-2xl"
               >
                 <p className="text-xl md:text-2xl text-white leading-relaxed mb-6">
-                  We work with enterprise and high-growth organisations to define priorities, align marketing, data and technology, and turn transformation plans into programmes that deliver.
+                  Vamberic builds and operates a growing portfolio of products and experiments, each shaped around a specific customer need.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  Engagements span growth strategy, AI adoption, customer journeys, CRM, predictive analytics, marketing architecture, go-to-market development and organisational capability.
+                  The portfolio can include applications and service-based propositions. Each starts with a focused offer, controlled investment and a clear way to test demand.
                 </p>
                 <div className="border-l-2 border-primary pl-6 mt-8">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Our work combines strategic clarity with practical delivery, from initial research and investment cases through implementation, measurement and optimisation.
+                    Shared infrastructure and operating capabilities help us launch efficiently, support products over time and apply what we learn across the portfolio.
                   </p>
                 </div>
               </motion.div>
@@ -245,7 +180,7 @@ export default function Home() {
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <SectionHeading
-              title="Strategy, technology and delivery working together"
+              title="Shared capabilities behind every product"
               subtitle="Our Capabilities"
             />
 
@@ -276,7 +211,7 @@ export default function Home() {
         <section className="py-24 bg-secondary/20 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeading
-              title="Transformation should produce measurable value"
+              title="Evidence guides the next investment"
               subtitle="Our Approach"
             />
 
@@ -287,13 +222,13 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-8">
-                  Technology is useful only when it improves decisions, customer outcomes or commercial performance.
+                  Every product starts with a commercial problem and a testable idea about how to solve it.
                 </p>
                 <p className="text-2xl md:text-3xl text-white font-semibold leading-relaxed mb-8">
-                  Vamberic connects strategic ambition with the operating changes, data foundations and delivery disciplines required to produce results.
+                  We launch lean, learn from real customers and use the results to decide what deserves further investment.
                 </p>
                 <p className="text-xl text-primary font-medium leading-relaxed">
-                  The aim is not transformation for its own sake. It is clearer decisions, stronger capabilities and lasting business value.
+                  Discipline means improving what works, maintaining what remains useful and stopping what does not justify further investment.
                 </p>
               </motion.div>
             </div>
@@ -304,9 +239,9 @@ export default function Home() {
         <section id="experience" className="py-24 relative overflow-hidden scroll-mt-20">
           <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-center text-primary font-semibold text-sm uppercase mb-4 tracking-wider">Selected Experience</h2>
+            <h2 className="text-center text-primary font-semibold text-sm uppercase mb-4 tracking-wider">Prior Experience</h2>
             <p className="text-center text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto mb-12">
-              Experience spans financial services, insurance, telecommunications, media, technology, energy, infrastructure and other complex operating environments.
+              Our product work draws on prior experience across financial services, telecommunications, media, technology, energy and infrastructure. The organisations below reflect that background.
             </p>
             <div className="relative overflow-hidden">
               <ul className="flex animate-scroll gap-12 items-center w-max list-none m-0 p-0">
@@ -332,15 +267,15 @@ export default function Home() {
         <section id="ventures" className="py-24 bg-secondary/20 relative overflow-hidden scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <SectionHeading
-              title="Selected ventures"
+              title="Selected portfolio examples"
               subtitle="Ventures"
             />
             <p className="text-center text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto -mt-6 mb-12">
-              Alongside its advisory work, Vamberic develops specialist ventures that apply its experience in data, AI, research and decision-making to focused business problems.
+              Our portfolio brings together focused products and service propositions at different stages of development. Current examples include HVM and Built Matters.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {visibleVentures.map((venture, idx) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {ventures.map((venture, idx) => (
                 <motion.div
                   key={venture.name}
                   initial={{ opacity: 0, y: 30 }}
@@ -351,35 +286,11 @@ export default function Home() {
                   data-testid={`card-venture-${venture.name.toLowerCase()}`}
                 >
                   <h3 className="flex items-center gap-4 mb-6">
-                    <img
-                      src={venture.logo}
-                      alt={`${venture.name} logo`}
-                      className={`${venture.logoClass ?? "h-12"} object-contain`}
-                    />
-                    {venture.showName ? (
-                      <span className="text-xl font-bold text-white font-display">{venture.name}</span>
-                    ) : (
-                      <span className="sr-only">{venture.name}</span>
-                    )}
+                    <span className="text-xl font-bold text-white font-display">{venture.name}</span>
                   </h3>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6 flex-1">
                     {venture.description}
                   </p>
-                  {venture.url ? (
-                    <a
-                      href={venture.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
-                    >
-                      Visit {venture.name}
-                      <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                    </a>
-                  ) : (
-                    <span className="inline-flex items-center gap-2 text-muted-foreground font-medium">
-                      Coming Soon
-                    </span>
-                  )}
                 </motion.div>
               ))}
             </div>
@@ -439,7 +350,7 @@ export default function Home() {
             </div>
 
             <p className="text-muted-foreground text-center max-w-md">
-              Independent management and technology consultancy.
+              A product studio building and operating focused products for real commercial problems.
             </p>
           </div>
 
