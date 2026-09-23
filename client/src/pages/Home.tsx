@@ -73,6 +73,8 @@ const experienceLogos = [
 const ventures = [
   {
     name: "HVM",
+    logo: "/hvm_logo.png",
+    url: "https://h-v-m.agency/",
     description: "A demand intelligence service proposition focused on helping businesses understand commercial demand."
   },
   {
@@ -286,11 +288,32 @@ export default function Home() {
                   data-testid={`card-venture-${venture.name.toLowerCase()}`}
                 >
                   <h3 className="flex items-center gap-4 mb-6">
+                    {venture.logo && (
+                      <img
+                        src={venture.logo}
+                        alt="Henry Vincent Moss Agency logo"
+                        width={96}
+                        height={96}
+                        loading="lazy"
+                        className="w-24 h-24 shrink-0 rounded-lg object-contain"
+                      />
+                    )}
                     <span className="text-xl font-bold text-white font-display">{venture.name}</span>
                   </h3>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6 flex-1">
                     {venture.description}
                   </p>
+                  {venture.url && (
+                    <a
+                      href={venture.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                    >
+                      Visit {venture.name}
+                      <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                    </a>
+                  )}
                 </motion.div>
               ))}
             </div>
