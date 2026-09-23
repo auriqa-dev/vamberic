@@ -75,7 +75,7 @@ const ventures = [
     name: "HVM",
     logo: "/hvm_logo.png",
     url: "https://h-v-m.agency/",
-    description: "A demand intelligence service proposition focused on helping businesses understand commercial demand."
+    description: "An AI-first marketing agency built around a swarm of specialist agents, putting more of your budget into the work and less into agency overhead."
   },
   {
     name: "Built Matters",
