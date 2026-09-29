@@ -82,7 +82,14 @@ const ventures = [
     name: "Built Matters",
     logo: "/built_matters_logo.png",
     url: "https://www.built-matters.com/",
-    description: "An emerging product focused on the built environment and energy performance."
+    description: "Built Matters analyses energy consumption to find financially material opportunities, to show organisations what to tackle first and measure whether the savings actually happen."
+  },
+  {
+    name: "Odyssiant",
+    logo: "/odyssiant_logo_with_text.png",
+    logoClass: "bg-white p-2",
+    url: "https://www.odyssiant.ai/",
+    description: "Odyssiant helps organisations understand their AI Visibility. It tests buyer questions across ChatGPT, Gemini, Claude and Perplexity."
   }
 ];
 
@@ -276,7 +283,7 @@ export default function Home() {
               subtitle="Ventures"
             />
             <p className="text-center text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto -mt-6 mb-12">
-              Our portfolio brings together focused products and service propositions at different stages of development. Current examples include HVM and Built Matters.
+              Our portfolio brings together focused products and service propositions at different stages of development. Current examples include HVM, Built Matters and Odyssiant.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -298,7 +305,7 @@ export default function Home() {
                         width={96}
                         height={96}
                         loading="lazy"
-                        className="w-24 h-24 shrink-0 rounded-lg object-contain"
+                        className={`w-24 h-24 shrink-0 rounded-lg object-contain ${venture.logoClass ?? ""}`}
                       />
                     )}
                     <span className="text-xl font-bold text-white font-display">{venture.name}</span>
