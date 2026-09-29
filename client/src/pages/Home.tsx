@@ -74,11 +74,14 @@ const ventures = [
   {
     name: "HVM",
     logo: "/hvm_logo.png",
+    logoAlt: "Henry Vincent Moss Agency logo",
     url: "https://h-v-m.agency/",
     description: "An AI-first marketing agency built around a swarm of specialist agents, putting more of your budget into the work and less into agency overhead."
   },
   {
     name: "Built Matters",
+    logo: "/built_matters_logo.png",
+    url: "https://www.built-matters.com/",
     description: "An emerging product focused on the built environment and energy performance."
   }
 ];
@@ -291,7 +294,7 @@ export default function Home() {
                     {venture.logo && (
                       <img
                         src={venture.logo}
-                        alt="Henry Vincent Moss Agency logo"
+                        alt={venture.logoAlt ?? `${venture.name} logo`}
                         width={96}
                         height={96}
                         loading="lazy"
