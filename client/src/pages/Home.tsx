@@ -79,6 +79,17 @@ const ventures = [
     description: "An AI-first marketing agency built around a swarm of specialist agents, putting more of your budget into the work and less into agency overhead."
   },
   {
+    name: "HVM",
+    id: "hvm-platform",
+    logo: "/hvm_platform_logo.png",
+    logoAlt: "HVM (High Value Marketing) logo",
+    category: "AI-Native Marketing Platform",
+    headline: "Marketing that thinks, decides and acts.",
+    url: "https://h-v-m.net/",
+    cta: "Explore HVM",
+    description: "Powered by Henry, HVM continuously understands customers, identifies opportunities and executes the next best action across marketing and sales to achieve commercial outcomes."
+  },
+  {
     name: "Built Matters",
     logo: "/built_matters_logo.png",
     url: "https://www.built-matters.com/",
@@ -289,13 +300,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {ventures.map((venture, idx) => (
                 <motion.div
-                  key={venture.name}
+                  key={venture.url}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
                   className="glass-card p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300 flex flex-col"
-                  data-testid={`card-venture-${venture.name.toLowerCase()}`}
+                  data-testid={`card-venture-${venture.id ?? venture.name.toLowerCase()}`}
                 >
                   <h3 className="flex items-center gap-4 mb-6">
                     {venture.logo && (
@@ -308,9 +319,17 @@ export default function Home() {
                         className={`w-24 h-24 shrink-0 rounded-lg object-contain ${venture.logoClass ?? ""}`}
                       />
                     )}
-                    <span className="text-xl font-bold text-white font-display">{venture.name}</span>
+                    <span className="min-w-0">
+                      <span className="text-xl font-bold text-white font-display">{venture.name}</span>
+                      {venture.category && (
+                        <span className="block mt-2 text-sm font-medium text-primary">{venture.category}</span>
+                      )}
+                    </span>
                   </h3>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6 flex-1">
+                    {venture.headline && (
+                      <span className="block mb-2 font-medium text-white">{venture.headline}</span>
+                    )}
                     {venture.description}
                   </p>
                   {venture.url && (
@@ -320,7 +339,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-primary font-medium hover:underline"
                     >
-                      Visit {venture.name}
+                      {venture.cta ?? `Visit ${venture.name}`}
                       <ArrowRight className="w-4 h-4" aria-hidden="true" />
                     </a>
                   )}
