@@ -1,48 +1,69 @@
-name: Deploy production website
-
+name: Deploy checked website
 on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**', '**/*.md']
+  pull_request:
   workflow_dispatch:
-
 permissions:
-  id-token: write
   contents: read
-
+concurrency:
+  group: website-production
+  cancel-in-progress: false
 jobs:
-  deploy:
-    name: Build and deploy
+  validate:
     runs-on: ubuntu-latest
-    environment: prod
-
+    timeout-minutes: 15
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 20
           cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build static website
-        run: npm run build
-
-      - name: Confirm static build output
-        run: test -f dist/public/index.html
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
         with:
-          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
-          aws-region: ${{ vars.AWS_REGION }}
-
-      - name: Sync website to S3
-        run: aws s3 sync dist/public/ "s3://${{ vars.WEBSITE_BUCKET }}" --delete
-
-      - name: Invalidate CloudFront cache
-        run: >
-          aws cloudfront create-invalidation
-          --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}"
-          --paths "/*"
+          name: website
+          path: dist/public/
+          if-no-files-found: error
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: prod
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 20
+      - uses: actions/download-artifact@v4
+        with:
+          name: website
+          path: dist/public/
+      - name: Reject superseded commits and record release identity
+        run: |
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$GITHUB_SHA"
+          mkdir -p .release
+          printf '%s\n' "$GITHUB_SHA" > .release/commit.txt
+      - uses: aws-actions/configure-aws-credentials@v5
+        with:
+          role-to-assume: arn:aws:iam::755905325223:role/VambericGitHubWebsiteDeployRole
+          aws-region: eu-west-2
+          allowed-account-ids: '755905325223'
+      - name: Preserve predecessor, deploy, verify and recover on failure
+        run: node scripts/release.mjs
+      - name: Retain recovery evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-evidence
+          path: .release/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
