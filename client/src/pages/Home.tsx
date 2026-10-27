@@ -72,6 +72,14 @@ const experienceLogos = [
 
 const ventures = [
   {
+    name: "Avelyndo",
+    logo: "/avelyndo_logo.png",
+    logoAlt: "Avelyndo logo — From intention to action.",
+    logoClass: "bg-white p-2",
+    url: "https://avelyndo.com/",
+    description: "A better way to build and manage portals with a better customer experience."
+  },
+  {
     name: "HVM",
     logo: "/hvm_logo.png",
     logoAlt: "Henry Vincent Moss Agency logo",
@@ -294,7 +302,7 @@ export default function Home() {
               subtitle="Ventures"
             />
             <p className="text-center text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto -mt-6 mb-12">
-              Our portfolio brings together focused products and service propositions at different stages of development. Current examples include HVM, Built Matters and Odyssiant.
+              Our portfolio brings together focused products and service propositions at different stages of development. Current examples include Avelyndo, HVM, Built Matters and Odyssiant.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
