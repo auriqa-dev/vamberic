@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navigation() {
+  const [location] = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -20,11 +21,13 @@ export function Navigation() {
     { name: "Capabilities", href: "#capabilities" },
     { name: "Experience", href: "#experience" },
     { name: "Ventures", href: "#ventures" },
+    { name: "Market Development", href: "/market-development-platforms" },
   ];
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
     setMobileMenuOpen(false);
+    if (!href.startsWith("#") || location !== "/") return;
+    e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -54,11 +57,11 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-5">
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
+                href={link.href.startsWith("#") && location !== "/" ? `/${link.href}` : link.href}
                 onClick={(e) => scrollToSection(e, link.href)}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative group"
               >
@@ -93,7 +96,7 @@ export function Navigation() {
               {navLinks.map((link) => (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href={link.href.startsWith("#") && location !== "/" ? `/${link.href}` : link.href}
                   onClick={(e) => scrollToSection(e, link.href)}
                   className="block text-lg font-medium text-white hover:text-primary"
                 >
